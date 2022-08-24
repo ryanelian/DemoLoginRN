@@ -134,6 +134,9 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
+        manifestPlaceholders = [
+            appAuthRedirectScheme: 'tam-passport'
+        ]
         applicationId "com.demologinrn"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
